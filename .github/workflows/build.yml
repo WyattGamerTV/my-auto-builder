@@ -2,9 +2,8 @@ name: Build Geode Mod
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: ["**"]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -12,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - name: Android
+          - name: Android64
             os: ubuntu-latest
             target: Android64
 
