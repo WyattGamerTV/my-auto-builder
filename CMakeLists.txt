@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 3.13)
 
 project(auto_builder)
 
-list(APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/geode-sdk")
-list(APPEND CMAKE_PREFIX_PATH "$ENV{GEODE_SDK}")
+list(APPEND CMAKE_PREFIX_PATH "/home/runner/cli")
 
 find_package(Geode REQUIRED)
 
