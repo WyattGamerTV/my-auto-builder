@@ -13,10 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Geode CLI
+        uses: geode-sdk/cli/.github/actions/setup@main
+
       - name: Build Android
         uses: geode-sdk/build-geode-mod@main
         with:
           target: Android64
           setup-android: true
-        env:
-          GEODE_SDK: ${{ github.workspace }}/geode-sdk
