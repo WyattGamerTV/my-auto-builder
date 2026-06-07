@@ -1,12 +1,15 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(AutoBuilder)
+project(auto_builder)
+
+list(APPEND CMAKE_PREFIX_PATH $ENV{GEODE_SDK})
 
 find_package(Geode REQUIRED)
 
 add_geode_mod(
-    wyattgamertv.autobuilder
+    wyattgamertv.auto_builder
     VERSION 1.0.0
-    GD_VERSION 2.208
-    SOURCES src/main.cpp
+    CONTAINS_RESOURCES
 )
+
+target_sources(wyattgamertv.auto_builder PUBLIC src/main.cpp)
