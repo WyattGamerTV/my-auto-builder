@@ -18,5 +18,4 @@ jobs:
         with:
           target: Android64
           setup-android: true
-        env:
-          GEODE_SDK: /home/runner/.geode
+          configure-args: "-DGeode_DIR=/home/runner/.geode/sdk/lib/cmake/Geode"
