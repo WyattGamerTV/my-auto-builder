@@ -18,3 +18,4 @@ jobs:
         with:
           target: Android64
           setup-android: true
+          sdk: cli
