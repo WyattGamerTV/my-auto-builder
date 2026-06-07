@@ -1,9 +1,15 @@
 {
     "geode": "3.0.0-beta.1",
-    "id": "wyattgamertv.autobuilder",
+    "id": "wyattgamertv.auto_builder",
     "version": "1.0.0",
     "name": "Auto Builder",
     "developer": "WyattGamerTV",
-    "description": "Spawns layout structures when clicking the music button.",
-    "dependencies": []
+    "description": "Spawns layout structures when clicking the music button",
+    "dependencies": [
+        {
+            "id": "geode-sdk.geode",
+            "version": ">=3.0.0-beta.1",
+            "importance": "required"
+        }
+    ]
 }
